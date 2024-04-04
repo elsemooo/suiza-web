@@ -23,10 +23,28 @@
 		<meta name="language" content="Spanish" />
 
 		<title>A&G Inmobiliaria - Venta de Lotes en Tarapoto</title>
-		<script type="module" crossorigin src="https://elsemooo.github.io/suiza-web/assets/index-DVctu1Hc.js"></script>
-		<link rel="stylesheet" crossorigin href="https://elsemooo.github.io/suiza-web/assets/index-DFDNGftB.css">
+		<script type="module" crossorigin src="https://elsemooo.github.io/suiza-web/assets/index-Vijq8APQ.js"></script>
+		<link rel="stylesheet" crossorigin href="https://elsemooo.github.io/suiza-web/assets/index-QsfPflWi.css">
 	</head>
 	<body>
 		<div id="root"></div>
+		<script>
+			var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+			if (isIOS) {
+				var canvasVideo = new CanvasVideoPlayer({
+					videoSelector: '.video',
+					canvasSelector: '.canvas',
+					timelineSelector: false,
+					autoplay: true,
+					makeLoop: true,
+					pauseOnClick: false,
+					audio: false,
+				});
+			} else {
+				// Use HTML5 video
+				document.querySelectorAll('.canvas')[0].style.display = 'none';
+			}
+		</script>
 	</body>
 </html>
